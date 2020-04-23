@@ -31,6 +31,63 @@ body
     display: block;
     padding: 0 30px;
 }
+.section .container
+{
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+.section-title
+{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+.section-title h2
+{
+    font-size: 40px;
+    color: #302e4d;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+    
+}
+.section-title h2::before
+{
+    content: '';
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.section-title h2::after
+{
+    content: '';
+    height: 4px;
+    width: 25px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+.row
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    position: relative;
+}
+.padd-15
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
 .main-content
 {
     padding-left: 270px;
@@ -45,6 +102,24 @@ body
 {
     -webkit-box-shadow: 0 0 20px rgba(48,46,77,0.15);
     box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+.btn 
+{
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: #fff;
+    border-radius: 40px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    display: inline-block;
+    white-space: nowrap;
+}
+.btn:hover
+{
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
  /* Aside */
 .aside
@@ -234,6 +309,251 @@ body
     transform: scale(1.1);
 }
 
+/*About*/
+
+.about .about-content
+{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 90%;
+    max-width: 100%;
+    margin-left: 15px;
+}
+.about .about-content .about-text
+{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 90%;
+    max-width: 100%;
+}
+.about .about-content .about-text h3
+{
+   font-size: 24px;
+   margin-bottom: 15px;
+   font-weight: 700;
+   color: #302e4d; 
+}
+.about .about-content .about-text p
+{
+    font-size: 16px;
+    line-height: 25px;
+    color: #504e70;
+    margin: 0;
+}
+.about .about-content .personal-info
+{
+    -ms-flex: 0 0 60%;
+    flex: 0 0 60%;
+    max-width: 100%;
+    margin-top: 40px;
+}
+.about .about-content .personal-info .info-item
+{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.about .about-content .personal-info .info-item p
+{
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 18px;
+    margin: 0;
+    color: #302e4d;
+    border-bottom: 1px solid #e8dfec;
+}
+.about .about-content .personal-info .info-item p span
+{
+    font-weight: 400;
+    color: #504e70;
+    margin-left: 4px;
+    display: inline-block;
+}
+.about .about-content .personal-info .buttons
+{
+    margin-top: 30px;
+}
+.about .about-content .personal-info .buttons .btn
+{
+    margin-right: 15px;
+    margin-top: 10px;
+}
+.about .about-content .education
+{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 30px;
+}
+.about .about-content h3.title
+{
+    font-size: 24px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #302e4d;
+}
+.about .about-content .timeline-box
+{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.about .about-content .timeline
+{
+    background-color: #fdf9ff;
+    padding: 30px 15px;
+    border: 1px solid #d4d4e3;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+.about .about-content .timeline .timeline-item
+{
+    padding-left: 35px;
+    position: relative;
+    padding-bottom: 40px;
+}
+.about .about-content .timeline .timeline-item:last-child
+{
+    padding-bottom: 0px;
+}
+.about .about-content .timeline .timeline-item::before
+{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+}
+.about .about-content .timeline .circle-dot
+{
+    position: absolute;
+    left: 0;
+    top: 1px;
+    height: 15px;
+    width: 15px;
+    left: 0px;
+    border-radius: 50%;
+}
+.about .about-content .timeline .timeline-date
+{
+    font-size: 14px;
+    margin-top: -5px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    color: #504e70;
+}
+.about .about-content .timeline .timeline-date .fa
+{
+    margin-right: 5px;
+}
+.about .about-content .timeline .timeline-title
+{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: #302e4d;
+}
+.about .about-content .timeline .timeline-text
+{
+    font-size: 16px;
+    line-height: 25px;
+    color: #504e70;
+    margin: 0;
+}
 
 
+ /*Skils*/
 
+ .skills
+ {
+     padding: 150px 25px;
+
+ 
+ }
+ .skills .skills-content
+ {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+ }
+
+ .skills .skills-content .skill-title p
+ {
+     margin-top: 50px;
+     margin-bottom: 20px;
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 20px;
+     color: #838383;
+     text-transform: capitalize;
+     
+ }
+ .skills .skills-content .skill-box
+ {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+ 
+ }
+ .skills .skills-content .skill-box h6
+ {
+     font-size: 16px;
+     font-weight: 500;
+     color: #000;
+     margin: 0 0 10px;
+ }
+ .skills .skills-content .skill-box .skill-bar
+ {
+     height: 8px;
+     border-radius: 6px;
+     background-color: rgb(143, 135, 135);
+     position: relative;
+     box-shadow: 3px 5px 8px  rgb(143, 135, 135);
+ }
+ .skills .skills-content .skill-box .skill-bar .skill-bar-in
+ {
+
+     border-radius: 6px;
+     position: absolute;
+     left: 0;
+     top: 0;
+     height: 100%;
+ }
+ .skills .skills-content .skill-box .skill-bar .skill-bar-in span
+ {
+     color: #838383;
+     font-size: 16px;
+     font-weight: 400;
+     position: absolute;
+     right: 0;
+     top: -30px;
+ }
+ .skills .skills-content .p-skill
+ {
+     margin-left: -15px;
+ }
+ .skills .skills-content .p-skill p
+ {
+     font-size: 24px;
+     margin-bottom: 40px;
+     font-weight: 700;
+     color: #302e4d;
+ } 
+ .skills .skills-content .p-skill .p-items i
+ {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 50px;
+    color: #5f5c5c;
+ }
+ .skills .skills-content .p-skill .p-items i:hover
+ {
+     text-shadow: 0 1px #302e4d;
+ }
