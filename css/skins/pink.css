@@ -8,6 +8,7 @@
     border-right: 4px solid #ec1839;
     border-bottom: 4px solid #ec1839;  
 }
+.projects .project-item-inner .project-info .project-tags a,
 .skills .skills-content .p-skill .p-items i:hover,
 .about .about-content .about-text h3 span,
 .aside .nav li a:hover,
@@ -15,6 +16,7 @@
 {
     color: #ec1839;
 }
+.projects .project-item-inner .project-date,
 .skills .skills-content .skill-box .skill-bar .skill-bar-in,
 .about .about-content .timeline .circle-dot,
 .about .about-content .timeline .timeline-item::before,
