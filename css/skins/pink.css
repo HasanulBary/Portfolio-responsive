@@ -8,6 +8,10 @@
     border-right: 4px solid #ec1839;
     border-bottom: 4px solid #ec1839;  
 }
+.lightbox .lightbox-controls .prev-item,
+.lightbox .lightbox-controls .next-item,
+.interest .interest-item .interest-info .icon .fa,
+.interest .interest-filter button.active,
 .projects .project-item-inner .project-info .project-tags a,
 .skills .skills-content .p-skill .p-items i:hover,
 .about .about-content .about-text h3 span,
@@ -29,4 +33,9 @@
 .home .intro .social-links a
 {
     background-color: #ec1839;
+}
+
+.interest .interest-filter button.active
+{
+    border-color: #ec1839;
 }

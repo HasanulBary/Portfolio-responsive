@@ -638,3 +638,279 @@ body
     text-decoration: none;
     font-weight: 600;
 }
+
+/*interest*/
+.interest
+{
+    padding-bottom: 40px;
+}
+.interest .interest-filter
+{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.interest .interest-filter button
+{
+    border: none;
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 20px 10px;
+    color: #302e4d;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    padding-bottom: 5px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.interest .interest-item
+{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+.interest .interest-item.hide
+{
+    display: none;
+}
+.interest .interest-item.show
+{
+    display: block;
+    animation: showItem 0.5s ease;
+}
+@-webkit-keyframes showItem
+{
+    0%
+    {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100%
+    {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.interest .interest-item-inner
+{
+    border: 6px solid #fdf9ff;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+.interest .interest-item-inner .interest-img img
+{
+    width: 100%;
+   display: block;
+}
+.interest .interest-item .interest-info
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(15, 14, 14, 0.705);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    padding: 30px;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.interest .interest-item-inner:hover .interest-info
+{
+    opacity: 1;
+}
+.interest .interest-item .interest-info h4
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+    opacity: 0;
+}
+.interest .interest-item-inner:hover .interest-info h4
+{
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+}
+.interest .interest-item .interest-info .icon
+{
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+    opacity: 0;
+}
+.interest .interest-item-inner:hover .interest-info .icon
+{
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+}
+.interest .interest-item .interest-info .icon .fa
+{
+    line-height: 40px;
+}
+
+/*lightbox*/
+.lightbox
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 100;
+    display: none;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: zoom-out;
+    padding: 30px;
+}
+.lightbox.open
+{
+    display: -ms-flexbox;
+    display: flex;
+}
+.lightbox .lightbox-content img 
+{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 620px;
+    cursor: pointer;
+    display: block;
+    padding: 40px 0 30px;
+}
+.lightbox .lightbox-content
+{
+    position: relative;
+
+}
+.lightbox.open .lightbox-content
+{
+    animation: lightboxImage .5s ease;
+}
+@-webkit-keyframes lightboxImage
+{
+    0%
+    {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100%
+    {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+.lightbox .lightbox-content .lightbox-close
+{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 0px;
+    right: 0px;
+    font-size: 32px;
+    text-align: right;
+    color: #fff;
+    cursor: pointer;
+    line-height: 40px;
+}
+
+.lightbox .lightbox-content .lightbox-caption
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    z-index: -1;
+}
+.lightbox .lightbox-controls .prev-item,
+.lightbox .lightbox-controls .next-item
+{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    margin-top: -20px;
+    z-index: 110;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.lightbox .lightbox-controls .prev-item:hover,
+.lightbox .lightbox-controls .next-item:hover
+{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.lightbox .lightbox-controls .prev-item:active,
+.lightbox .lightbox-controls .next-item:active
+{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.lightbox .lightbox-controls .prev-item
+{
+    left: 32px;
+}
+.lightbox .lightbox-controls .next-item
+{
+    right: 30px;
+}
+.lightbox .lightbox-controls .prev-item .fa,
+.lightbox .lightbox-controls .next-item .fa
+{
+    font-size: 33px;
+    line-height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
