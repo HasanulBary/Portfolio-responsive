@@ -8,13 +8,18 @@
     border-right: 4px solid #ec1839;
     border-bottom: 4px solid #ec1839;  
 }
+body.dark .interest .interest-filter button.active,
+.contact .contact-info-item .icon .fa,
 .lightbox .lightbox-controls .prev-item,
 .lightbox .lightbox-controls .next-item,
 .interest .interest-item .interest-info .icon .fa,
 .interest .interest-filter button.active,
 .projects .project-item-inner .project-info .project-tags a,
+body.dark .skills .skills-content .p-skill .p-items i:hover,
 .skills .skills-content .p-skill .p-items i:hover,
 .about .about-content .about-text h3 span,
+body.dark .aside .nav li a:hover,
+body.dark .aside .nav li a.active,
 .aside .nav li a:hover,
 .aside .nav li a.active
 {
@@ -34,7 +39,6 @@
 {
     background-color: #ec1839;
 }
-
 .interest .interest-filter button.active
 {
     border-color: #ec1839;

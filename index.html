@@ -8,11 +8,48 @@
    <!-- Template css Files -->
 	<link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="css/skins/pink.css" type="text/css">
+
+  <!---Live Style Switcher--->
+
+  <link rel="stylesheet" class="alternate-style" title="pink" href="css/skins/pink.css" type="text/css" disabled>
+  <link rel="stylesheet" class="alternate-style" title="blue" href="css/skins/blue.css" type="text/css" disabled>
+  <link rel="stylesheet" class="alternate-style" title="orange" href="css/skins/orange.css" type="text/css" disabled> 
+  <link rel="stylesheet" class="alternate-style" title="yellow" href="css/skins/yellow.css" type="text/css" disabled>
+  <link rel="stylesheet" class="alternate-style" title="green" href="css/skins/green.css" type="text/css" disabled>
+  <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css">
+
+
+
+
+
+
   <script src="https://kit.fontawesome.com/71bbf7af9b.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
+<!--Live Style Switcher-->
+<div class="style-switcher">
+  <div class="toggle-style-switcher">
+    <i class="fa fa-cog fa-spin"></i>
+  </div>
+  <h5>Style Switcher</h5>
+  <ul>
+    <li><a href="javascript:void(0);" title="pink" style="background-color: #ec1839;" onclick="setActiveStyle('pink')"></a></li>
+    <li><a href="javascript:void(0);" title="blue" style="background-color: #2196f3;" onclick="setActiveStyle('blue')"></a></li>
+    <li><a href="javascript:void(0);" title="orange" style="background-color: #fa5b0f;" onclick="setActiveStyle('orange')"></a></li>
+    <li><a href="javascript:void(0);" title="yellow" style="background-color: #ffb400;" onclick="setActiveStyle('yellow')"></a></li>
+    <li><a href="javascript:void(0);" title="green" style="background-color: #72b626;" onclick="setActiveStyle('green')"></a></li>
+  </ul>
+  <h5>Mode</h5>
+  <label>
+    <input type="radio" class="body-skin" name="body-style" value="light" checked="true">
+    Light
+  </label>
+  <label>
+    <input type="radio" class="body-skin" name="body-style" value="dark">
+    Dark
+  </label>
+</div>
 <!--main container-->
 <div class="main-container">
   <!--Aside-->
@@ -319,7 +356,7 @@
       </div>
     </div>
     <div class="row">
-        <div class="about-text padd-15">
+        <div class="text padd-15">
           <p>Apart from being a developer, also a good photographer, I enjoy most of my time being outdoors. In winter, The surroundings of my country, specially the mountain side glimpse so extraordinary. I like that moment for hiking And Clicking lots of picture. 
              I spend a large amount of my free time exploring the latest technology advancements to enrich my IQ. There are some of my clicked picture are given bellow</p>
         </div>
@@ -363,7 +400,7 @@
         <div class="interest-item padd-15" data-category="other">
           <div class="interest-item-inner shadow-dark">
             <div class="interest-img">
-              <img src="images/portfolio/5.jpeg" alt="interest">
+              <img src="images/portfolio/3.jpeg" alt="interest">
             </div>
             <div class="interest-info">
               <h4>Sunset City</h4>
@@ -391,7 +428,7 @@
          <div class="interest-item padd-15" data-category="landscape">
           <div class="interest-item-inner shadow-dark">
             <div class="interest-img">
-              <img src="images/portfolio/3.jpeg" alt="interest">
+              <img src="images/portfolio/5.jpeg" alt="interest">
             </div>
             <div class="interest-info">
               <h4>Landscape</h4>
@@ -405,7 +442,7 @@
         <div class="interest-item padd-15" data-category="other">
           <div class="interest-item-inner shadow-dark">
             <div class="interest-img">
-              <img src="images/portfolio/6.jpeg" alt="interest">
+              <img src="images/portfolio/9.jpeg" alt="interest">
             </div>
             <div class="interest-info">
               <h4>Baby</h4>
@@ -418,14 +455,86 @@
         <!--End-->
       </div>
     </div>
-  </div>
 </section>
 
+<section class="contact section">
+  <div class="container">
+    <div class="row">
+      <div class="section-title padd-15">
+        <h2>Contact Me</h2>
+      </div>
+      <div class="row padd-15">
+        <!--info-->
+        <div class="contact-info-item padd-15">
+          <div class="icon"><i class="fa fa-phone"></i></div>
+          <h4>Call Me On</h4>
+          <p>+880-1846-337323</p>
+        </div>
+                <!--info-->
+        <div class="contact-info-item padd-15">
+          <div class="icon"><i class="fa fa-map-marker"></i></div>
+          <h4>Office</h4>
+          <p>562,Central Shopping complex, GEC</p>
+        </div>
+                <!--info-->
+        <div class="contact-info-item padd-15">
+          <div class="icon"><i class="fa fa-envelope"></i></div>
+          <h4>Email</h4>
+          <p>reticentnirob68@gnail.com</p>
+        </div>
+      </div>
+    </div>
+      <!--form-->
 
 
-  </div>
- </div>
+      <div class="row padd-15">
+        <form class="contact-form padd-15">
+          <div class="row">
+            <div class="form-item col-6 padd-15">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Name*">
+              </div>
+            </div>
+            <div class="form-item col-6 padd-15">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Email*">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-item col-12 padd-15">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Subject*">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-item col-12 padd-15">
+              <div class="form-group">
+                <textarea class="form-control" placeholder="Your Message ...."></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 padd-15">
+              <button type="submit" class="btn">Send Message</button>
+            </div>
+          </div>
+
+
+
+
+        </form>
+        </div>
+      
+    
+</section>
+  
+
+
 </div>
+</div>
+
 <!--Light Box-->
 <div class="lightbox">
   <div class="lightbox-content">
@@ -443,7 +552,10 @@
 </div>
 
 
+
+
 <script src="js/script.js"></script>
+<script src="js/styleSwitcher.js"></script>
 </body>
 </html>
 

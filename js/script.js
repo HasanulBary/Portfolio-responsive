@@ -16,7 +16,7 @@ const filterContainer=document.querySelector(".interest-filter"),
             this.classList.add("active");
             
             const filterValue=this.getAttribute("data-filter");
-            for(let k=0; k<=totalFilterBtn; k++)
+            for(let k=0; k<=totalFilterBtn+40; k++)
             {
               if(filterValue === interestItems[k].getAttribute("data-category")){
                 interestItems[k].classList.remove("hide");
