@@ -34,6 +34,54 @@ input,textarea,select
     min-height: 100vh;
     display: block;
     padding: 0 30px;
+    position: fixed;
+    left: 270px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.section.back-section
+{
+    z-index: 1;
+}
+.section.active
+{
+    opacity: 1;
+    z-index: 2;
+    -webkit-animation: slideSection 1s ease;
+    animation:  slideSection 1s ease;
+}
+@-webkit-keyframes slideSection
+{
+    0%
+    {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+@keyframes slideSection
+{
+    0%
+    {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
 }
 .section .container
 {
@@ -92,10 +140,7 @@ input,textarea,select
     padding-right: 15px;
     
 }
-.main-content
-{
-    padding-left: 270px;
-}
+
 .container
 {
     max-width: 1100p;
@@ -115,8 +160,8 @@ input,textarea,select
     padding: 12px 35px;
     color: #fff;
     border-radius: 40px;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     display: inline-block;
     white-space: nowrap;
     border: none;
@@ -126,6 +171,66 @@ input,textarea,select
 {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
+}
+/*page loader*/
+.preloader
+{
+    background-color: #222222;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 150;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: all 2s ease;
+    transition: all 2s ease;
+}
+.preloader.opacity-0
+{
+    opacity: 0;
+}
+.preloader .loader
+{
+    height: 40px;
+    width: 40px;
+    border: 4px solid #e3e3e3;
+    border-radius: 50%;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin
+{
+    0%
+    {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin
+{
+    0%
+    {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
  /* Aside */
 .aside
@@ -139,6 +244,9 @@ input,textarea,select
     z-index: 10;
     border-color: 1px solid #e8dfec;
     padding: 30px;
+    overflow: auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.s ease;
 }
 .aside .logo
 {
@@ -176,22 +284,25 @@ input,textarea,select
 }
 .aside .nav-toggler
 {
-    height: 40px;
-    width: 45px;
+    height: 32px;
+    width: 35px;
     border: 1px solid #d4d4e3;
     cursor: pointer;
     position: fixed;
     left: 300px;
-    top: 30px;
+    top: 20px;
     z-index: 11;
     border-radius: 5px;
     background-color: #fdf9ff;
-    display: -ms-flexbox;
-    display: flex;
+    /*display: -ms-flexbox;
+    display: flex;*/
+    display: none;
     -ms-flex-align:center;
     align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 .aside .nav-toggler span
 {
@@ -199,6 +310,10 @@ input,textarea,select
     width: 18px;
     display: inline-block;
     position: relative;
+}
+.aside .nav-toggler.open span
+{
+    background-color: transparent;
 }
 .aside .nav-toggler span::before
 {
@@ -209,6 +324,12 @@ input,textarea,select
     top: -6px;
     left: 0;
 }
+.aside .nav-toggler.open span::before
+{
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 0px;
+}
 .aside .nav-toggler span::after
 {
     content: '';
@@ -217,6 +338,12 @@ input,textarea,select
     position: absolute;
     top: 6px;
     left: 0;
+}
+.aside .nav-toggler.open span::after
+{
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 0px;
 }
 .aside .nav
 {
@@ -307,7 +434,7 @@ input,textarea,select
     border-radius: 50%;
     text-decoration: none;
     -webkit-transition: all .3s ease;
-    transition: all .5s ease;
+    transition: all .3s ease;
 }
 .home .intro .social-links a:hover
 {
@@ -473,9 +600,7 @@ input,textarea,select
 
  .skills
  {
-     padding: 150px 25px;
-
- 
+    min-height: 100vh;
  }
  .skills .skills-content
  {
@@ -517,7 +642,7 @@ input,textarea,select
      border-radius: 6px;
      background-color: rgb(172, 168, 168);
      position: relative;
-     box-shadow: 1px 3px 8px  rgb(143, 135, 135);
+     box-shadow: 1px 2px 7px  rgb(143, 135, 135);
  }
  .skills .skills-content .skill-box .skill-bar .skill-bar-in
  {
@@ -1028,6 +1153,7 @@ body.dark .aside .logo a,
 body.dark .aside .nav li a{
     color: #fff;
 }
+body.dark .skills .skills-content .skill-box h6,
 body.dark .contact .contact-info-item p,
 body.dark .interest .text p,
 body.dark .projects .project-item-inner .project-info .project-tags,
@@ -1067,14 +1193,35 @@ body.dark .shadow-dark
 /*Responsive*/
 @media (max-width: 1197px)
 {
-    .aside{
+    .section .container
+    {
+        padding-top: 70px;
+    }
+    .aside .nav-toggler
+    {
+        display: -ms-flexbox;
+        display: flex;
+        left: 30px;
+    }
+    .aside .nav-toggler.open
+    {
+        left: 300px;
+    }
+    .aside
+    {
         left: -270px;
     }
-
-    .main-content
+    .aside.open
     {
-        padding-left: 0;
-        padding-right: 0;
+        left: 0px;
+    }
+    .section
+    {
+        left: 0;
+    }
+    .section.open
+    {
+        left: 270px;
     }
     .about .about-content .personal-info .info-item p span
     {

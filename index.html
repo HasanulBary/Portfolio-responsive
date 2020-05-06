@@ -27,6 +27,12 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+<!--Preloader-->
+<div class="preloader">
+  <div class="loader">
+
+  </div>
+</div>
 <!--Live Style Switcher-->
 <div class="style-switcher">
   <div class="toggle-style-switcher">
@@ -63,12 +69,12 @@
       <span></span>
     </div>
     <ul class="nav">
-      <li><a href="#" class="active"><i class="fa fa-home"></i> Home</a></li>
-      <li><a href="#"><i class="fa fa-user"></i> About</a></li>
-      <li><a href="#"><i class="fa fa-list"></i> Skills</a></li>
-      <li><a href="#"><i class="fa fa-briefcase"></i> Projects</a></li>
-      <li><a href="#"><i class="fa fa-envelope"></i> Interest</a></li>
-      <li><a href="#"><i class="fa fa-comments"></i> Contact</a></li>
+      <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+      <li><a href="#skills"><i class="fa fa-list"></i> Skills</a></li>
+      <li><a href="#projects"><i class="fa fa-briefcase"></i> Projects</a></li>
+      <li><a href="#interest"><i class="fa fa-envelope"></i> Interest</a></li>
+      <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
     </ul>
 
   <!--Copyright-->
@@ -79,7 +85,7 @@
 
   <!--main Content-->
   <div class="main-content">
-    <section class="home section">
+    <section class="home section active" id="home">
       <div class="container">
         <div class="intro">
           <img class="shadow-dark" src="images/profile.png" alt="profile">
@@ -96,7 +102,7 @@
     </section>
 
     <!--About me-->
-    <section class="about section">
+    <section class="about section" id="about">
       <div class="container">
         <div class="row">
           <div class="section-title padd-15">
@@ -142,7 +148,7 @@
                   <div class="row">
                     <div class="buttons padd-15">
                       <a href="#" class="btn">Download CV</a>
-                      <a href="#" class="btn">Hire Me</a>
+                      <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
                     </div>
                   </div>
                 </div>
@@ -190,7 +196,7 @@
                         </p>
                       </div>
                     </div>
-                  </div>
+                  </div> 
                 </div>
               </div>
               </div>
@@ -202,7 +208,7 @@
 <!--skills-->
 
 
-<section class="skills section">
+<section class="skills section" id="skills">
   <div class="container">
     <div class="row">
       <div class="section-title padd-15">
@@ -274,7 +280,7 @@
   </section>
 <!--Projects-->
 
-<section class="projects section">
+<section class="projects section" id="projects">
   <div class="container">
     <div class="row">
       <div class="section-title padd-15">
@@ -348,7 +354,7 @@
 </section>
 
 <!--Interest-->
-<section class="interest section">
+<section class="interest section" id="interest">
   <div class="container">
     <div class="row">
       <div class="section-title padd-15">
@@ -457,7 +463,7 @@
     </div>
 </section>
 
-<section class="contact section">
+<section class="contact section" id="contact">
   <div class="container">
     <div class="row">
       <div class="section-title padd-15">

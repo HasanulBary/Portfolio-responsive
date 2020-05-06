@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c5a0004-0537-489d-9d0a-8059b78a06d9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/skins/pink.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/skins/pink.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/portfolio/3.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/images/portfolio/3.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/portfolio/5.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/images/portfolio/5.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/portfolio/6.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-    </list>
+    <list default="true" id="4c5a0004-0537-489d-9d0a-8059b78a06d9" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +50,7 @@
       <workItem from="1587709947270" duration="118000" />
       <workItem from="1587987075089" duration="512000" />
       <workItem from="1588501200514" duration="602000" />
+      <workItem from="1588503140810" duration="235000" />
     </task>
     <task id="LOCAL-00001" summary="v1">
       <created>1587183348486</created>
@@ -102,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587987168451</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="v7">
+      <created>1588503164120</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1588503164120</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +126,7 @@
     <MESSAGE value="v4" />
     <MESSAGE value="v5" />
     <MESSAGE value="v3" />
-    <option name="LAST_COMMIT_MESSAGE" value="v3" />
+    <MESSAGE value="v7" />
+    <option name="LAST_COMMIT_MESSAGE" value="v7" />
   </component>
 </project>
